@@ -16,7 +16,7 @@ Route::get('/', function()
 	return View::make('index');
 });
 
-Route::get('p', 'PostController@index');
+Route::get('p/{id?}', 'PostController@index');
 // 登录与登出
 Route::controller('admin/auth', '\\Backend\\AuthController');
 
