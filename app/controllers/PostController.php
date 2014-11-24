@@ -8,6 +8,7 @@ class PostController extends \controller
 		}else{
 			$post = DB::table('posts')->get();
 		}
-		return View::make('font.post')->withPost($post);
+		$decode_content = Markdown::render($post->post_content);
+		return View::make('font.post')->withPost($post)->withDecode($decode_content);
 	}
 }

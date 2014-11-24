@@ -34,11 +34,11 @@
 	<div class="topnav">
 		<a class="logo" href="#"><img src="http://notech.qiniudn.com/logo.gif" alt=""/></a>
 		<div class="toplinks">
-			<a href="#">敬请期待</a>
-			<a href="#">敬请期待</a>
-			<a href="#">敬请期待</a>
-			<a href="#">敬请期待</a>
-			<a href="#">敬请期待</a>
+				<a href="http://tianzengsi.com/p/4">天增寺传说</a>
+				<a href="http://tianzengsi.com/p/5">天增寺始末</a>
+				<a href="http://tianzengsi.com">天增寺首页</a>
+
+
 		</div>
 	</div>
 	<div class="footer">
