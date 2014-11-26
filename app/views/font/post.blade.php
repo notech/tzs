@@ -33,6 +33,27 @@
 			<div class="imgwrap"><img src="http://www.kamakura-zuisenji.or.jp/imgs/garden/p1.jpg" alt=""/></div>
 		</div>
 	</div>
+	<div class="content">
+		<div class="cont_box">
+			<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="{{$post->id}}" data-title="{{$post->post_title}}" data-url="http://tianzengsi.com/p/{{$post->id}}"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"tianzengsi"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.unstable.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+		</div>
+	</div>
+
 	<div class="footer">
 		<p class="footer_c">
 			<span id="copyright">Copyright (©) 天增寺 All rights reserved.</span>

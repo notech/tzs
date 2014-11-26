@@ -6,7 +6,8 @@
 	"require": {
 		"laravel/framework": "4.2.*",
 		"barryvdh/laravel-ide-helper": "~1.11",
-        "graham-campbell/markdown": "~2.0"
+        "graham-campbell/markdown": "~2.0",
+		"cooper/wechat": "dev-master"
 	},
 	"autoload": {
 		"classmap": [

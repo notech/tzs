@@ -1,0 +1,25 @@
+{
+    "name": "cooper/wechat",
+    "keywords": ["laravel", "weixin", "wechat"],
+    "license": "MIT",
+    "description": "Wechat SDK for Laravel 4",
+    "authors": [
+        {
+            "name": "cooper",
+            "email": "myxiaoao@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/controllers"
+        ],
+        "psr-0": {
+            "Cooper\\Wechat\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}

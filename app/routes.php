@@ -17,6 +17,12 @@ Route::get('/', function()
 });
 
 Route::get('p/{id?}', 'PostController@index');
+Route::any('/weixin',function(){
+
+    //获取接收到的消息
+    $message = WeChatServer::getMessage();
+    return $message;
+});
 // 登录与登出
 Route::controller('admin/auth', '\\Backend\\AuthController');
 

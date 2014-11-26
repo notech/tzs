@@ -19,6 +19,7 @@ return array(
     'Category' => $baseDir . '/app/models/Category.php',
     'Comment' => $baseDir . '/app/models/Comment.php',
     'Commentmeta' => $baseDir . '/app/models/Commentmeta.php',
+    'Cooper\\Wechat\\Controllers\\WechatController' => $vendorDir . '/cooper/wechat/src/controllers/WechatController.php',
     'CreateCategories' => $baseDir . '/app/database/migrations/2014_02_18_142241_create_categories.php',
     'CreateCommentmeta' => $baseDir . '/app/database/migrations/2014_02_18_143404_create_commentmeta.php',
     'CreateComments' => $baseDir . '/app/database/migrations/2014_02_18_142151_create_comments.php',

@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "677cbbff5f5ebb902dfc7c201cbea016",
+    "hash": "c0f16f950fef98084af3cadc08c7c170",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -115,6 +115,51 @@
                 "preload"
             ],
             "time": "2014-03-12 00:05:31"
+        },
+        {
+            "name": "cooper/wechat",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/huanghua581/laravel-wechat-sdk.git",
+                "reference": "a089f7c45b908ed3b0506a2385c041120d3cf357"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/huanghua581/laravel-wechat-sdk/zipball/a089f7c45b908ed3b0506a2385c041120d3cf357",
+                "reference": "a089f7c45b908ed3b0506a2385c041120d3cf357",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "4.2.*",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/controllers"
+                ],
+                "psr-0": {
+                    "Cooper\\Wechat\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "cooper",
+                    "email": "myxiaoao@gmail.com"
+                }
+            ],
+            "description": "Wechat SDK for Laravel 4",
+            "keywords": [
+                "laravel",
+                "wechat",
+                "weixin"
+            ],
+            "time": "2014-11-24 01:10:43"
         },
         {
             "name": "d11wtq/boris",
@@ -1009,16 +1054,16 @@
         },
         {
             "name": "stack/builder",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stackphp/builder.git",
-                "reference": "b4af43e7b7f3f7fac919ff475b29f7c5dc7b23b7"
+                "reference": "c1f8a4693b55c563405024f708a76ef576c3b276"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stackphp/builder/zipball/b4af43e7b7f3f7fac919ff475b29f7c5dc7b23b7",
-                "reference": "b4af43e7b7f3f7fac919ff475b29f7c5dc7b23b7",
+                "url": "https://api.github.com/repos/stackphp/builder/zipball/c1f8a4693b55c563405024f708a76ef576c3b276",
+                "reference": "c1f8a4693b55c563405024f708a76ef576c3b276",
                 "shasum": ""
             },
             "require": {
@@ -1047,15 +1092,14 @@
             "authors": [
                 {
                     "name": "Igor Wiedler",
-                    "email": "igor@wiedler.ch",
-                    "homepage": "http://wiedler.ch/igor/"
+                    "email": "igor@wiedler.ch"
                 }
             ],
             "description": "Builder for stack middlewares based on HttpKernelInterface.",
             "keywords": [
                 "stack"
             ],
-            "time": "2014-01-28 19:42:24"
+            "time": "2014-11-23 20:37:11"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1940,7 +1984,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "cooper/wechat": 20
+    },
     "prefer-stable": false,
     "platform": [],
     "platform-dev": []

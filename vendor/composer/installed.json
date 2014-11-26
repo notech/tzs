@@ -94,58 +94,6 @@
         ]
     },
     {
-        "name": "stack/builder",
-        "version": "v1.0.2",
-        "version_normalized": "1.0.2.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/stackphp/builder.git",
-            "reference": "b4af43e7b7f3f7fac919ff475b29f7c5dc7b23b7"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/stackphp/builder/zipball/b4af43e7b7f3f7fac919ff475b29f7c5dc7b23b7",
-            "reference": "b4af43e7b7f3f7fac919ff475b29f7c5dc7b23b7",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0",
-            "symfony/http-foundation": "~2.1",
-            "symfony/http-kernel": "~2.1"
-        },
-        "require-dev": {
-            "silex/silex": "~1.0"
-        },
-        "time": "2014-01-28 19:42:24",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.0-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Stack": "src"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Igor Wiedler",
-                "email": "igor@wiedler.ch",
-                "homepage": "http://wiedler.ch/igor/"
-            }
-        ],
-        "description": "Builder for stack middlewares based on HttpKernelInterface.",
-        "keywords": [
-            "stack"
-        ]
-    },
-    {
         "name": "predis/predis",
         "version": "v0.8.7",
         "version_normalized": "0.8.7.0",
@@ -1997,6 +1945,104 @@
             "parsedown",
             "parsedown extra wrapper",
             "parsedown wrapper"
+        ]
+    },
+    {
+        "name": "stack/builder",
+        "version": "v1.0.3",
+        "version_normalized": "1.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/stackphp/builder.git",
+            "reference": "c1f8a4693b55c563405024f708a76ef576c3b276"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/stackphp/builder/zipball/c1f8a4693b55c563405024f708a76ef576c3b276",
+            "reference": "c1f8a4693b55c563405024f708a76ef576c3b276",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "symfony/http-foundation": "~2.1",
+            "symfony/http-kernel": "~2.1"
+        },
+        "require-dev": {
+            "silex/silex": "~1.0"
+        },
+        "time": "2014-11-23 20:37:11",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Stack": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Igor Wiedler",
+                "email": "igor@wiedler.ch"
+            }
+        ],
+        "description": "Builder for stack middlewares based on HttpKernelInterface.",
+        "keywords": [
+            "stack"
+        ]
+    },
+    {
+        "name": "cooper/wechat",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/huanghua581/laravel-wechat-sdk.git",
+            "reference": "a089f7c45b908ed3b0506a2385c041120d3cf357"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/huanghua581/laravel-wechat-sdk/zipball/a089f7c45b908ed3b0506a2385c041120d3cf357",
+            "reference": "a089f7c45b908ed3b0506a2385c041120d3cf357",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/support": "4.2.*",
+            "php": ">=5.4.0"
+        },
+        "time": "2014-11-24 01:10:43",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/controllers"
+            ],
+            "psr-0": {
+                "Cooper\\Wechat\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "cooper",
+                "email": "myxiaoao@gmail.com"
+            }
+        ],
+        "description": "Wechat SDK for Laravel 4",
+        "keywords": [
+            "laravel",
+            "wechat",
+            "weixin"
         ]
     }
 ]

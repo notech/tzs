@@ -107,7 +107,8 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
-		'GrahamCampbell\Markdown\MarkdownServiceProvider'
+		'GrahamCampbell\Markdown\MarkdownServiceProvider',
+		'Cooper\Wechat\WechatServiceProvider',
 	),
 
 	/*
@@ -173,7 +174,9 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-		'Markdown'        => 'GrahamCampbell\Markdown\Facades\Markdown'
+		'Markdown'        => 'GrahamCampbell\Markdown\Facades\Markdown',
+		'WeChatServer'    => 'Cooper\Wechat\Facades\WeChatServer',
+		'WeChatClient'    => 'Cooper\Wechat\Facades\WeChatClient',
 	),
 
 );
