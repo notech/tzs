@@ -1,6 +1,6 @@
-## writor
+## 天增寺
 
-基于Laravel框架开发的博客系统。
+基于Laravel框架开发的cms系统。
 
 
 ###Usage
@@ -9,7 +9,7 @@
 
 	```
 	cd www #你的服务器放网站的目录
-	git clone https://github.com/overtrue/writor.git
+	git clone https://github.com/notech/tzs.git
 	```
 
 1. 切换到`composer.json`所在目录，使用composer安装项目
@@ -40,8 +40,6 @@
     ```
 
 1. 开启重写模块:使用`apache`请开启`mod_rewrite`,使用`nginx`同学请参考这个配置示例：[https://gist.github.com/davzie/3938080](https://gist.github.com/davzie/3938080)
-
-1. 那么现在访问`http://yourhost/writor/public/admin` 应该会跳转到后台登录页。
 
 ###友情提示
 ---
