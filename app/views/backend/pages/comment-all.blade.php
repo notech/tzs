@@ -5,6 +5,10 @@
 @section('content')
 <div class="row">
     <div class="col-md-12 form-group">
+    <iframe id="duoshuo-remote-window" src="http://tianzengsi.duoshuo.com/admin/?jwt={{$token}}" 
+    style="width: 100%; border: 0px; height: 680px;"></iframe>
+    </div>
+    <!-- <div class="col-md-12 form-group">
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -59,7 +63,7 @@
             {{$comments->links()}}
         </div>
     </div>
-</div>
+</div> -->
 @endsection
 
 @section('page_css')

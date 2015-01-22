@@ -5,6 +5,7 @@ use \Input;
 use \Comment;
 use \Redirect;
 use \Validator;
+use \Jwt;
 
 class CommentController extends BaseController {
 
@@ -15,8 +16,15 @@ class CommentController extends BaseController {
 	 */
 	public function getAll()
 	{
+		$token = array(
+    		"short_name"=>"tianzengsi",
+    		"user_key"=>"1",
+    		"name"=>"admin",
+		);
+		$duoshuoToken = Jwt::encode($token, '5647345c482ad1e75dcd3174742e8973');
+
 		$comments = Comment::paginate(15);
-		return View::make('backend.pages.comment-all')->withComments($comments);
+		return View::make('backend.pages.comment-all')->withComments($comments)->withToken($duoshuoToken);
 	}
 
 	/**

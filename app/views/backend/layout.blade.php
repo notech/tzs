@@ -93,7 +93,7 @@
           <a href="{{ url('/admin/comment/all') }}">
             <i class="entypo-comment"></i>
             <span>评论</span>
-            <span class="badge badge-secondary badge-roundless">9</span>
+            <!-- <span class="badge badge-secondary badge-roundless">9</span> -->
           </a>
         </li>
 
