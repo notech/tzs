@@ -56,19 +56,16 @@
                     <td>{{$link->created_at}}</td>
                     <td>
                         <div class="td-tool-bar-wrapper">
-                        <div class="td-tool-bar">
-                             <div class="tips-text">
-                                 <a href="{{url('/admin/nav/edit', array('id' => 1))}}" class="btn btn-default btn-sm btn-icon icon-left">
-                                  <i class="entypo-pencil"></i>编辑
-                                  </a>
-                                  <a href="{{url('/admin/nav/delete', array('id' => 1))}}" class="btn btn-danger btn-sm btn-icon icon-left" onclick="return confirm('确认删除吗？')">
-                                                                <i class="entypo-cancel"></i>
-                                                                删除
-                                                            </a>
-                                                        </div>
-                                                        <div class="tips-angle diamond"></div>
-                                                    </div>
-                                                </div>
+                            <div class="td-tool-bar">
+                                <div class="tips-text">
+                                    <a href="{{url('/admin/nav/edit', array('id' => $link->id))}}" class="btn btn-default btn-sm btn-icon icon-left">
+                                        <i class="entypo-pencil"></i>编辑
+                                    </a>
+                                    <a href="{{url('/admin/nav/delete', array('id' => $link->id))}}" class="btn btn-danger btn-sm btn-icon icon-left" onclick="return confirm('确认删除吗？')"> <i class="entypo-cancel"></i>删除</a>
+                                </div>
+                                    <div class="tips-angle diamond"></div>
+                            </div>
+                        </div>
                     </td>
                 </tr>
                 @endforeach

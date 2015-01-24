@@ -22,6 +22,20 @@ class NavController extends BaseController {
 	public function postCreate()
 	{
 		$nav = new Nav();
+
+		$rules = array(
+			'title' => 'required',
+			'url'   => 'url'
+		);
+
+		$validator = Validator::make(Input::all(), $rules);
+
+		// Validation fails
+		if ($validator->fails()) {
+			return Redirect::back()->withErrors($validator)->withInput();
+		}
+
+
 		$nav->title = Input::get('title');
 		$nav->url = Input::get('url');
 		$nav->save();
@@ -45,9 +59,10 @@ class NavController extends BaseController {
 	 *
 	 * @return Response
 	 */
-	public function getDelete($id)
+	public function anyDelete($id)
 	{
-		return Link::findOrFail($id)->delete();
+		Nav::findOrFail($id)->delete();
+		return Redirect::back()->withMessage("删除成功！");
 	}
 
 }
