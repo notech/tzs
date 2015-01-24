@@ -16,10 +16,9 @@
 		<div class="topnav_c">
 			<a class="logo" href="#"><img src="http://notech.qiniudn.com/logo.gif" alt=""/></a>
 			<div class="toplinks">
-				<a href="http://tianzengsi.com/p/4">天增寺传说</a>
-				<a href="http://tianzengsi.com/p/5">天增寺始末</a>
-				<a href="http://tianzengsi.com">天增寺首页</a>
-				
+			    @foreach(getNav() as $post)
+			    <a href="{{$post->url}}">{{$post->title}}</a>
+				@endforeach
 			</div>
 		</div>
 	</div>

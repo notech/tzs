@@ -11,3 +11,7 @@ function getRandomImg() {
 
 	return $arr[$key];
 }
+
+function getNav() {
+	return Nav::all();
+}
