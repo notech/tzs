@@ -30,7 +30,7 @@
 				{{$decode}}
 			</div>
 
-			<div class="imgwrap"><img src="http://www.kamakura-zuisenji.or.jp/imgs/garden/p1.jpg" alt=""/></div>
+			<div class="imgwrap"><img src="{{getRandomImg()}}" alt=""/></div>
 		</div>
 	</div>
 	<div class="content">

@@ -41,7 +41,7 @@
             <tbody>
                 @if(!count($links))
                 <tr>
-                    <td colspan="6">目前没有链接</td>
+                    <td colspan="6">目前没有导航</td>
                 </tr>
                 @else
                 @foreach($links as $link)
@@ -69,9 +69,6 @@
                 @endif
             </tbody>
         </table>
-        <div class="pull-right">
-            {{$links->links()}}
-        </div>
     </div>
 </div>
 @endsection
