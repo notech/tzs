@@ -33,7 +33,8 @@ Route::group(array('prefix' => '/admin', 'before' => 'auth'), function(){
     Route::get('/', '\\Backend\\HomeController@index');
     Route::controller('post', '\\Backend\\PostController');
     Route::controller('link', '\\Backend\\LinkController');
-    Route::controller('user', '\\Backend\\UserController');
+	Route::controller('nav', '\\Backend\\NavController');
+	Route::controller('user', '\\Backend\\UserController');
     Route::controller('comment', '\\Backend\\CommentController');
     Route::controller('system', '\\Backend\\SystemController');
     Route::controller('category', '\\Backend\\CategoryController');

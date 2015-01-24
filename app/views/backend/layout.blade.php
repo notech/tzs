@@ -98,6 +98,14 @@
         </li>
 
         <li>
+          <a href="{{ url('/admin/nav/all') }}">
+            <i class="entypo-comment"></i>
+            <span>导航</span>
+            <!-- <span class="badge badge-secondary badge-roundless">9</span> -->
+          </a>
+        </li>
+
+        <li>
           <a href="{{ url('/admin/link/all') }}">
             <i class="entypo-link"></i>
             <span>链接</span>
