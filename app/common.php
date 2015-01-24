@@ -4,7 +4,6 @@
 function getRandomImg() {
 	$arr = array(
 		'http://www.kamakura-zuisenji.or.jp/imgs/garden/p1.jpg',
-		'http://www.kamakura-zuisenji.or.jp/imgs/garden/p3.jpg',
 		'http://www.kamakura-zuisenji.or.jp/imgs/garden/p2.jpg'
 	);
 
