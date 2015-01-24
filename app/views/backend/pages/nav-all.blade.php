@@ -10,7 +10,7 @@
                     <form action="{{url('/admin/nav/create')}}" method="post" accept-charset="utf-8" class="">
                         <div class="form-group">
                             <label class="control-label">导航名称</label>
-                            <input type="text" name="name" class="form-control" placeholder="" value="{{Input::old('name')}}">
+                            <input type="text" name="title" class="form-control" placeholder="" value="{{Input::old('name')}}">
                         </div>
                         <div class="form-group">
                             <label class="control-label">链接</label>
@@ -50,21 +50,25 @@
                         <input type="checkbox" value="{{$link->id}}">
                     </td>
                     <td>
-                        {{$link->link_name}}
+                        {{$link->title}}
                     </td>
-                    <td>{{$link->link_url}}</td>
+                    <td>{{$link->url}}</td>
                     <td>{{$link->created_at}}</td>
                     <td>
+                        <div class="td-tool-bar-wrapper">
                         <div class="td-tool-bar">
-                            <a href="#" class="btn btn-default btn-sm btn-icon icon-left">
-                                <i class="entypo-pencil"></i>
-                                编辑
-                            </a>
-                            <a href="#" class="btn btn-danger btn-sm btn-icon icon-left">
-                                <i class="entypo-cancel"></i>
-                                删除
-                            </a>
-                        </div>
+                             <div class="tips-text">
+                                 <a href="{{url('/admin/nav/edit', array('id' => 1))}}" class="btn btn-default btn-sm btn-icon icon-left">
+                                  <i class="entypo-pencil"></i>编辑
+                                  </a>
+                                  <a href="{{url('/admin/nav/delete', array('id' => 1))}}" class="btn btn-danger btn-sm btn-icon icon-left" onclick="return confirm('确认删除吗？')">
+                                                                <i class="entypo-cancel"></i>
+                                                                删除
+                                                            </a>
+                                                        </div>
+                                                        <div class="tips-angle diamond"></div>
+                                                    </div>
+                                                </div>
                     </td>
                 </tr>
                 @endforeach

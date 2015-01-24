@@ -19,6 +19,15 @@ class NavController extends BaseController {
 		return View::make('backend.pages.nav-all')->withLinks($links);
 	}
 
+	public function postCreate()
+	{
+		$nav = new Nav();
+		$nav->title = Input::get('title');
+		$nav->url = Input::get('url');
+		$nav->save();
+		return Redirect::back()->withMessage("导航添加成功！");
+	}
+
 	/**
 	 * 编辑链接
 	 *
